@@ -23,15 +23,14 @@ workflows:
               bash ./tools/scripts/signing_app.sh
           - name: Build Android app
             script: |
-              ./gradlew assembleRelease
+              ./gradlew  signReleaseBundle
         artifacts:
-            - app/build/**/outputs/**/*.apk
+            - app/build/outputs/bundle/**/*.aab
         publishing:
             google_play:
                 credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
                 track: internal
-                changes_not_sent_for_review: true
-                submit_as_draft: true
+                submit_as_draft: false
             email:
                 recipients:
                     - johnson.hsu@artkernel.net

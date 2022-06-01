@@ -16,6 +16,7 @@ workflows:
         environment:
           groups:
             - android_signing
+            - google_play
         scripts:
           - name: Set up key.properties file for code signing
             script:
@@ -26,6 +27,11 @@ workflows:
         artifacts:
             - app/build/**/outputs/**/*.apk
         publishing:
+            google_play:
+                credentials: $GCLOUD_SERVICE_ACCOUNT_CREDENTIALS
+                track: internal
+                changes_not_sent_for_review: true
+                submit_as_draft: true
             email:
                 recipients:
                     - johnson.hsu@artkernel.net

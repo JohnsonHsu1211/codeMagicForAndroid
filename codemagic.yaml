@@ -1,10 +1,30 @@
 workflows:
-    android-app: # workflow ID
+    android-app:
+        instance_type: linux_x2
         name: Android app # workflow name
         scripts:
             - ./gradlew assembleDebug
         artifacts:
             - build/outputs/**/**/*.apk
+        publishing:
+            email:
+                recipients:
+                    - johnson.hsu@artkernel.net
+    release-workflow:
+        name: Release Android
+        instance_type: linux_x2
+        environment:
+          groups:
+            - android_signing
+        scripts:
+          - name: Set up key.properties file for code signing
+            script:
+              bash ./tools/scripts/signing_app.sh
+          - name: Build Android app
+            script: |
+              ./gradlew assembleRelease
+        artifacts:
+            - app/build/**/outputs/**/*.apk
         publishing:
             email:
                 recipients:

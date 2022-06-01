@@ -3,22 +3,26 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
-Properties properties = new Properties()
-properties.load(project.rootProject.file("keystore.properties").newDataInputStream())
+def keystorePropertiesFile = rootProject.file("keystore.properties")
 
 android {
     signingConfigs {
-        config {
-            storeFile file(properties.getProperty("key.storeFile", ""))
-            storePassword properties.getProperty("key.storePassword", "")
-            keyAlias properties.getProperty("key.alias", "")
-            keyPassword properties.getProperty("key.password", "")
+        release {
+            if (keystorePropertiesFile.canRead()) {
+                def keystoreProperties = new Properties()
+                keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+                keyAlias keystoreProperties['key.keyAlias']
+                keyPassword keystoreProperties['key.keyPassword']
+                storeFile file(keystoreProperties['key.storeFile'])
+                storePassword keystoreProperties['key.storePassword']
+            }
         }
     }
 
     buildTypes {
         release {
-            signingConfig signingConfigs.config
+            signingConfig signingConfigs.release
         }
     }
 

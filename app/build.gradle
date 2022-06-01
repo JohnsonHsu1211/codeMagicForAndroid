@@ -3,7 +3,25 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+Properties properties = new Properties()
+properties.load(project.rootProject.file("keystore.properties").newDataInputStream())
+
 android {
+    signingConfigs {
+        config {
+            storeFile file(properties.getProperty("key.storeFile", ""))
+            storePassword properties.getProperty("key.storePassword", "")
+            keyAlias properties.getProperty("key.alias", "")
+            keyPassword properties.getProperty("key.password", "")
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+        }
+    }
+
     compileSdk 31
 
     defaultConfig {

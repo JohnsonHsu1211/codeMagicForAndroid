@@ -17,6 +17,11 @@ workflows:
           groups:
             - android_signing
             - google_play
+        triggering:
+          events:
+            - push
+          branch_patterns:
+            - pattern: release
         scripts:
           - name: Set up key.properties file for code signing
             script:

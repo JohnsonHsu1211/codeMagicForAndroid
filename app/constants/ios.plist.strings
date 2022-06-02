@@ -1,0 +1,25 @@
+[[Uncategorized]]
+	[NSCameraUsageDescription]
+		en = The camera can be used to take photos of proofs of documents or delivery.
+		ko = 가입시 문서 증명, 배송완룔 증명등을 위해 카메라 권한이 필요합니다.
+		comment = A message shown to the user when the system asks the user's permission for the app to access the camera. It would be good to have a detailed message as to why the app needs access here.
+	[NSPhotoLibraryUsageDescription]
+		en = Photos from the library can be uploaded as proofs of documents or delivery.
+		ko = 가입시 문서 증명, 배송완룔 증명등을 위해 사진 라이브러리 접근 권한이 필요합니다.
+		comment = A message shown to the user when the system asks the user's permission for the app to access the photo library. It would be good to have a detailed message as to why the app needs access here.
+	[NSLocationAlwaysAndWhenInUseUsageDescription]
+		en = Location data is used to provide nearby orders.
+		ko = 배송지까지의 거리 측정을 위해 위치 서비스 권한이 필요합니다.
+		comment = A message shown to the user when the system asks the user's permission to access location data. It would be good to have a detailed message as to why the app needs access here. Can be the same as the other location messages.
+	[NSLocationAlwaysUsageDescription]
+		en = Location data is used to provide nearby orders.
+		ko = 배송지까지의 거리 측정을 위해 위치 서비스 권한이 필요합니다. 
+		comment = A message shown to the user when the system asks the user's permission to always access location data. It would be good to have a detailed message as to why the app needs access here. Can be the same as the other location messages.
+	[NSLocationWhenInUseUsageDescription]
+		en = Location data is used to provide nearby orders.
+		ko = 배송지까지의 거리 측정을 위해 위치 서비스 권한이 필요합니다. 
+		comment = A message shown to the user when the system asks the user's permission to access location data when the app is in use. It would be good to have a detailed message as to why the app needs access here. Can be the same as the other location messages.
+	[NSUserTrackingUsageDescription]
+		en = Analytics data will be used to improve the service and user experience.
+		ko = 사용 분석을 위해 사용자 데이터를 제한적으로 접근할 수 있는 권한이 필요합니다.
+		comment = A message shown to the user when the system asks the user's permission to allow tracking of user data for analytics usage. It would be good to have a detailed message as to why the app needs access here.

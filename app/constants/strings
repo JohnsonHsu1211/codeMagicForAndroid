@@ -1,0 +1,1236 @@
+[[general]]
+	[general.hello]
+		en = Hello
+		ko = 안녕하세요
+	[general.cancel]
+		en = Cancel
+		ko = 취소
+	[general.ok]
+		en = Ok
+		ko = 확인
+	[general.error]
+		en = Error
+		ko = 에러 발생
+	[general.next]
+		en = Next
+		ko = 다음
+	[general.skip]
+		en = Skip
+		ko = 건너뛰기
+	[general.select]
+		en = Select
+		ko = 선택
+	[general.validate]
+		en = Validate
+		ko = 인증하기
+	[general.unknown_error]
+		en = An unknown error has occurred
+		ko = 에러가 발생했습니다
+	[general.go_back]
+		en = Go Back
+		ko = 뒤로 가기
+	[general.all]
+		en = All
+		ko = 전체
+	[general.call_center]
+		en = Call CS
+		ko = 콜 센터
+	[general.info]
+		en = Info
+	[general.driver]
+		en = Driver
+		ko = 기사
+	[general.krw]
+		en = KRW
+		ko = 원
+	[general.yes]
+		en = Yes
+		ko = 네
+	[general.no]
+		en = No
+		ko = 아니요
+	[general.agree]
+		en = Agree
+		ko = 동의
+	[general.disagree]
+		en = Disagree
+		ko = 거부
+[[error]]
+	[[form_validation]]
+		[error.form_validation.invalid_field]
+			en = Invalid %@
+			comment = Message shown when the value for a certain field is not valid
+		[error.form_validation.passwords_not_matching]
+			en = Passwords do not match
+			comment = Message shown when the values for the password and confirm password fields are not matching
+	[[order_details]]
+		[error.order_details.cancelled]
+			en = This order has been cancelled by the customer
+			ko = 이 주문은 고객에 의해 취소되었습니다
+	[[taken_order]]
+		[error.taken_order.cant_complete_before_pickup_time]
+			en = You can not complete a booked order before the requested pickup time. If there is an exception, please contact Customer Support.
+			ko = 픽업요청 시간 이전에 완료할 수 없습니다. 예외사항 발생시 고객센터로 연락주세요
+[[landing]]
+	[landing.message]
+		en = 배송이 필요한 순간
+		ko = 배송이 필요한 순간
+	[landing.login.phone]
+		en = Login with phone
+		ko = 휴대폰 번호로 로그인
+	[landing.login.kakao]
+		en = Login with Kakao
+		ko = 카카오로 로그인
+    [landing.login.apple]
+		en = Login with Apple
+		ko = Apple ID로 로그인
+[[login]]
+	[login.title]
+		en = Login
+		ko = 로그인
+	[login.greeting]
+		en = Hello.\nWe are GoGoX.
+		ko = 안녕하세요.\n고고엑스입니다.
+	[login.message]
+		en = Please log in to use the service.
+		ko = 서비스 이용을 위해 로그인 해주세요.
+	[[field]]
+		[login.field.mobile_number]
+			en = Mobile Number
+			ko = 휴대폰 번호 입력
+		[login.field.password]
+			en = Password
+			ko = 비밀번호 입력
+	[[button]]
+		[login.button.action]
+			en = Login
+			ko = 로그인
+		[login.button.forgot_password]
+			en = Forgot password
+			ko = 비밀번호 찾기
+		[login.button.signup]
+			en = Sign Up
+			ko = 회원가입
+	[[prompt]]
+		[login.prompt.field_required]
+			en = %@ is required
+			ko = %@ 정보 필수
+			comment = Message shown when the user hasn't filled up a required field on the login screen
+	[[error]]
+		[login.error.unauthorized]
+			en = Phone number or password is incorrect.
+			ko = 휴대폰 번호 또는 비밀번호가 일치하지 않습니다.
+[[forgot_password]]
+	[forgot_password.title]
+		en = Forgot Password
+		ko = 비밀번호 찾기
+	[forgot_password.message]
+		en = To reset password\nPhone number verification is required.
+		ko = 비밀번호 찾기는\n휴대폰 인증이 필요합니다.
+	[forgot_password.reset]
+		en = Verification completed.\nPlease enter a new password
+		ko = 인증이 완료되었습니다.\n새로운 비밀번호를 입력하세요.
+	[[placeholder]]
+		[forgot_password.placeholder.phone_number]
+			en = Enter phone number
+			ko = 휴대폰 번호 입력
+		[forgot_password.placeholder.otp]
+			en = Enter the 7-digit code
+			ko = 인증번호 7자리 입력
+	[[action]]
+		[forgot_password.action.authenticate]
+			en = Authenticate
+			ko = 인증하기
+	[[error]]
+		[forgot_password.error.otp]
+			en = The verification code is incorrect
+			ko = 인증번호가 일치하지 않습니다.
+		[forgot_password.error.phone_not_registered]
+			en = This number is not registered
+			ko = 등록되지 않은 번호입니다.
+	[forgot_password.success_message]
+		en = Password changed successfully
+		comment = Message shown when the user has successfully changed their password
+[[signup]]
+	[signup.title]
+		en = Signup
+		ko = 회원가입
+	[signup.step]
+		en = Step %@
+		comment = Step number shown at the header of signup pages
+	[[phone_input]]
+		[signup.phone_input.verify]
+			en = Verify
+			ko = 인증하기
+		[signup.phone_input.resend]
+			en = Resend Code
+			ko = 인증번호 재발송
+	[[agreements]]
+		[signup.agreements.required]
+			en = Required
+			ko = 필수
+		[signup.agreements.optional]
+			en = Optional
+			ko = 선택
+		[signup.agreements.agree_to_all]
+			en = Agree to all
+			ko = 전체 동의
+		[signup.agreements.tos]
+			en = Agree to Terms of Service
+			ko = 이용약관 동의
+		[signup.agreements.privacy]
+			en = Agree to Privacy Policy
+			ko = 개인정보 수집 약관 동의
+		[signup.agreements.marketing]
+			en = Agree to Email Marketing
+			ko = 이메일 마케팅 수신에 동의합니다.
+		[signup.agreements.location]
+			en = Agree to Location Policy
+			ko = 위치기반 서비스 약관 동의
+	[[steps]]
+		[signup.step.1]
+			en = When signing up for membership\nMobile phone authentication is required.
+			ko = 회원가입 시\n휴대폰 인증이 필요합니다.
+		[signup.step.2]
+			en = Please enter your basic information
+			ko = 회원님의 기본 정보를\n입력해 주세요.
+		[signup.step.3]
+			en = %@\nPlease enter your vehicle's information.
+			ko = %@ 님의\n차량 정보를 입력해 주세요.
+		[signup.step.4]
+			en = %@\nPlease enter your account information.
+			ko = %@ 님의\n계좌 정보를 입력해 주세요.
+		[signup.step.apple]
+			en = Apple User Input
+			ko = 애플 계정으로 이용
+		[signup.step.kakao]
+			en = Kakao User Input
+			ko = 카카오 계정으로 이용
+	[[field]]
+		[signup.field.required]
+			en = (Required)
+			ko = (필수)
+		[signup.field.phone_number]
+			en = Mobile phone number
+			ko = 휴대폰 번호
+		[signup.field.name]
+			en = Name
+			ko = 이름
+		[signup.field.password]
+			en = Password
+			ko = 비밀번호
+		[signup.field.password_confirmation]
+			en = Password confirmation
+			comment = Name of the password confirmation field
+		[signup.field.email]
+			en = Email
+			ko = 이메일
+		[signup.field.referral_code]
+			en = Referral Code (Optional)
+			ko = 추천인 코드(선택)
+		[signup.field.vehicle_information]
+			en = Vehicle information
+			ko = 차량 정보
+		[signup.field.vehicle_number]
+			en = Vehicle Number
+			ko = 차량 번호
+		[signup.field.vehicle_photos]
+			en = Vehicle Photos
+			ko = 차량 사진
+		[signup.field.drivers_license]
+			en = Driver's License
+			ko = 운전면허증
+		[signup.field.wearing_helmet]
+			en = I wear a helmet when driving.
+			ko = 운행시 헬멧을 착용하고 있습니다.
+		[signup.field.social_security_number]
+			en = Social Security No.
+			ko = 주민등록 번호
+		[signup.field.social_security_card]
+			en = Social Security Card
+			ko = 신분증 사진
+		[signup.field.insurance_issuer]
+			en = Insurance Issuer
+			ko = 보험사
+		[signup.field.insurance_number]
+			en = Insurance Number
+			ko = 보험 번호
+		[signup.field.insurance_expiration]
+			en = Insurance Expiration Date
+			ko = 보험 만료일자
+		[signup.field.insurance_proof]
+			en = Insurance Proof
+			ko = 보험 가입 서류
+		[signup.field.business_type]
+			en = Business Type
+			ko = 사업자 타입
+		[signup.field.business_registration_number]
+			en = Business Registration Number
+			ko = 사업자 등록 번호
+		[signup.field.business_registration_document]
+			en = Business Registration Document
+			ko = 사업자 등록증
+		[signup.field.transportation_license]
+			en = Transportation License
+			ko = 화물 운송 자격증
+		[signup.field.vehicle_registration_document]
+			en = Vehicle Registration Document
+			ko = 자동차 등록증
+		[signup.field.bank]
+			en = Bank
+			ko = 은행명
+		[signup.field.bank_account_number]
+			en = Account number
+			ko = 계좌번호
+		[signup.field.bank_account_holder]
+			en = Account Holder
+			ko = 예금주
+		[signup.field.business_information]
+			en = Business Information
+			ko = 사업자 정보
+		[signup.field.fill_all_required]
+			en = Please fill-in all required information
+			ko = 필수 입력 정보를 모두 채워주세요
+			comment = Message shown to the user when not all of the required fields are filled in
+		[signup.field.otp]
+			en = OTP
+			ko = OTP
+			comment = Name of the OTP field
+	[[placeholder]]
+		[signup.placeholder.phone_number]
+			en = Enter mobile phone number
+			ko = 휴대폰 번호 입력
+		[signup.placeholder.otp]
+			en = Enter 6-digit code
+			ko = 인증번호 6자리 입력
+		[signup.placeholder.name]
+			en = Please enter your name
+			ko = 이름을 입력하세요.
+		[signup.placeholder.password]
+			en = Please enter your password
+			ko = 비밀번호를 입력하세요
+		[signup.placeholder.confirm_password]
+			en = Please enter your password again
+			ko = 비밀번호를 한 번 더 입력하세요
+		[signup.placeholder.email]
+			en = Please enter your email
+			ko = 이메일을 입력하세요
+		[signup.placeholder.referral_code]
+			en = Please enter a referral code
+			ko = 추천인 코드를 입력하세요
+		[signup.placeholder.vehicle_type]
+			en = Please select a vehicle
+			ko = 차량을 선택하세요
+		[signup.placeholder.vehicle_number]
+			en = Please enter your vehicle number
+			ko = 차량 번호를 입력하세요
+		[signup.placeholder.insurance_expiration]
+			en = Please enter the expiration date
+			ko = 만료 일자 선택
+		[signup.placeholder.bank]
+			en = Please select a bank
+			ko = 은행 선택
+		[signup.placeholder.bank_account_number]
+			en = Please enter the account number without '-'
+			ko = ‘-’를 제외한 계좌번호를 입력하세요
+		[signup.placeholder.bank_account_holder]
+			en = Please enter the account Holder
+			ko = 예금주를 입력하세요
+		[signup.placeholder.drivers_license]
+			en = Upload your driver's License
+			ko = 운전면허증 등록
+		[signup.placeholder.social_security_number]
+			en = social security number 
+			ko = 주민번호 입력
+			comment = Placeholder shown on the social security number input field
+		[signup.placeholder.social_security_card]
+			en = personal ID 
+			ko = 주민등록증 
+			comment = Placholder text shown on the social security card document upload view
+		[signup.placeholder.business_registration_document]
+			en = Business registration document 
+			ko = 사업자등록증
+			comment = Placeholder text shown on the business registration document upload view
+		[signup.placeholder.transportation_license]
+			en = Please upload your transport License
+			ko = 화물 운송 자격증 등록
+		[signup.placeholder.vehicle_registration_document]
+			en = Vehicle registration document
+			ko = 자동차등록증 
+			comment = Placeholder text shown on the vehicle registration document upload view
+		[signup.placeholder.insurance_number]
+			en = Please enter your insurance number
+			ko = 보험 번호를 입력하세요
+		[signup.placeholder.insurance_proof]
+			en = Insurance document
+			ko = 보험 가입 서류
+			comment = Placeholder text shown on the insurance proof document upload view
+		[signup.placeholder.business_registration_number]
+			en = Enter your business registration number
+			ko = 사업자등록번호를 입력하세요
+	[[skip]]
+		[signup.skip.title]
+			en = Are you sure you want to skip?
+			ko = 정말 건너뛰시겠습니까?
+		[signup.skip.footer]
+			en = You can skip to enter it later.
+			ko = 건너뛰어도 나중에 입력이 가능합니다.
+		[signup.skip.vehicle]
+			en = If you don't fill out the vehicle information,\naccepting orders will be unavailable.
+			ko = 차량 정보를 기입하지 않으시면\n향후 운송 주문을 받을 수 없습니다.
+		[signup.skip.bank]
+			en = If you don't fill out the account information,\nwithdrawal of earnings will be unavailable.
+			ko = 계좌 정보를 기입하지 않으시면\n비용에 대한 출금이 제한됩니다.
+	[[success]]
+		[signup.success.go_to_home]
+			en = Go to Home
+			ko = 홈으로
+		[signup.success.message]
+			en = Try the service right now.
+			ko = 지금 바로 서비스를 이용해보세요.
+		[signup.success.greeting]
+			en = Welcome %@!
+			ko = %@님\n환영합니다!
+	[[business_type]]
+		[signup.business_type.individual_simplified]
+			en = Individual (Simplified Taxation)
+			ko = 간이 사업자
+		[signup.business_type.individual_regular]
+			en = Individual (Regular Taxation)
+			ko = 개인 사업자
+		[signup.business_type.corporate]
+			en = Corporate
+			ko = 법인 사업자
+	[signup.email_exists]
+		en = Email aready exists
+		comment = Message shown when a driver tries to register with an email that's already registered in the system
+	[signup.otp_invalid]
+		en = The verification code is incorrect
+		ko = 인증번호가 일치하지 않습니다.
+	[signup.otp_phone_registered]
+		en = This number is already registered
+		ko = 이미 등록된 번호입니다.
+	[signup.confirm_account_creation]
+		en = An account will be created with the information provided. Would you like to proceed?
+		ko = 입력한 정보로 계정이 생성됩니다. 계속하시겠습니까?
+[[available_orders]]
+	[available_orders.title]
+		en = Orders
+		ko = 주문
+	[available_orders.prompt]
+		en = Enter your vehicle information to accept orders.
+		ko = 차량 정보를 입력하면 주문을 확인할 수 있습니다.
+	[available_orders.see_details]
+		en = Details
+		ko = 상세 보기
+	[available_orders.today]
+		en = Today
+		ko = 오늘
+		comment = Text shown on a pending order request card when the order is on the current day
+	[available_orders.font]
+		en = Font
+		ko = 글자크기
+	[available_orders.filter]
+		en = Filter
+		ko = 필터
+	[available_orders.locked]
+		en = This order is being viewed by another driver.
+		ko = 다른 기사님이 확인 중입니다.
+	[[row_header]]
+		[available_orders.row_header.area]
+			en = Area
+			ko = 지역
+		[available_orders.row_header.distance]
+			en = Distance
+			ko = 거리
+		[available_orders.row_header.vehicle]
+			en = Vehicle
+			ko = 차량
+		[available_orders.row_header.from]
+			en = From
+			ko = 출발지
+		[available_orders.row_header.to]
+			en = To
+			ko = 도착지
+		[available_orders.row_header.time]
+			en = Time
+			ko = 시간
+		[available_orders.row_header.date]
+			en = Date
+			ko = 날짜
+		[available_orders.row_header.fare]
+			en = Fare
+			ko = 운임
+[[taken_orders]]
+	[taken_orders.title]
+		en = Taken Orders
+		ko = 접수 주문
+[[order_type]]
+	[order_type.asap]
+		en = ASAP
+		ko = 당일 배송
+	[order_type.booking]
+		en = Booking
+		ko = 예약 배송
+	[[short]]
+		[order_type.short.all]
+			en = All
+			ko = 전체
+		[order_type.short.asap]
+			en = ASAP
+			ko = 당일
+		[order_type.short.booking]
+			en = Booking
+			ko = 예약
+[[trip_type]]
+	[trip_type.round_trip]
+		en = Round trip
+		ko = 왕복
+	[trip_type.multiple_destinations]
+		en = Multiple destinations
+		ko = 경유
+[[payment]]
+	[[mode]]
+		[payment.mode.cash]
+			en = Cash
+			ko = 현금
+		[payment.mode.card]
+			en = Card
+			ko = 카드
+		[payment.mode.credit]
+			en = Credit
+			ko = 신용
+[[order_details]]
+	[order_details.requirements]
+		en = Requirements
+		ko = 특이사항
+	[order_details.goods]
+		en = Goods
+		ko = 물품 정보
+	[order_details.remark]
+		en = Remark
+		ko = 비고
+	[order_details.customer_memo]
+		en = Customer Memo
+		ko = 고객 메모
+	[order_details.fare]
+		en = Fare
+		ko = 운임
+	[order_details.navigate]
+		en = Navigate
+		ko = 길 안내 시작
+	[order_details.copy_address]
+		en = Copy address
+		ko = 주소 복사
+	[order_details.copy_address_success]
+		en = Address copied to clipboard
+		ko = 주소가 복사 되었습니다.
+	[order_details.bonus]
+		en = Bonus +%@
+		ko = 보너스 +%@
+	[[updated]]
+		[order_details.updated.message]
+			en = Order updated
+			comment = Alert message shown when updated details are received for the current order that the user is viewing
+		[order_details.updated.action]
+			en = Reload
+			comment = Button title to prompt the user to reload the current page when updated details are received
+		[order_details.updated.no_longer_available]
+			en = Order is no longer available
+			comment = Alert message shown when the current order that the user is viewing has been assigned and is no long available
+	[[non_taken]]
+		[order_details.non_taken.title]
+			en = Order Details
+			ko = 새로운 주문
+		[order_details.non_taken.auto]
+			en = Auto View
+			ko = 자동 뷰
+		[[prompt]]
+			[order_details.non_taken.prompt.title]
+				en = Profile Update
+				ko = 프로필 업데이트
+			[order_details.non_taken.prompt.message]
+				en = To receive a new order\nYou must update your profile.
+				ko = 새로운 주문을 받기 위해서는\n프로필 업데이트를 진행해야 합니다.
+			[order_details.non_taken.prompt.action]
+				en = Profile Update
+				ko = 프로필 업데이트
+			[[action]]
+				[order_details.non_taken.action.close]
+					en = Close
+					ko = 닫기
+				[order_details.non_taken.action.accept]
+					en = Accept Order
+					ko = 접수
+		[[error]]
+			[order_details.non_taken.error.invalid_user_id]
+				en = Invalid User ID
+				ko = 사용자 ID가 일치하지 않습니다. 
+			[order_details.non_taken.error.locked]
+				en = This order is locked by another user. Please try again in 5 seconds.
+				ko = 다른 기사님이 먼저 조회중인 주문입니다. 5초 후 다시 시도해 주세요.
+		[[assigned]]
+			[order_details.non_taken.assigned.title]
+				en = Order Taken
+				ko = 주문 수락 완료
+			[order_details.non_taken.assigned.message]
+				en = This order has already been taken. Please select another order.
+				ko = 이 주문은 이미 수락이 완료 되었습니다. 다른 주문을 선택해 주세요
+		[[unapproved]]
+			[order_details.non_taken.unapproved.title]
+				en = Account Not Approved
+				ko = placeholder
+			[order_details.non_taken.unapproved.message]
+				en = You can't view orders until your account is approved.
+				ko = placeholder
+			[order_details.non_taken.unapproved.error_assign]
+				en = You can't accept orders until your account is approved.
+				ko = 주문을 수락할 수 없습니다. 계정 상태를 확인해주세요
+	[[taken]]
+		[order_details.taken.completed]
+				en = Delivery Completed
+				ko = 배송 완료
+		[order_details.taken.start]
+				en = Start
+				ko = 출발
+		[order_details.taken.destination]
+				en = Destination
+				ko = 도착
+		[order_details.taken.destination_multiple]
+				en = Destination %@
+				ko = 도착 %@
+		[[action]]
+			[order_details.taken.action.complete]
+				en = Delivery Complete
+				ko = 배송 완료
+			[order_details.taken.action.signature]
+				en = Signature
+				ko = 서명
+			[order_details.taken.action.photo]
+				en = Photo
+				ko = 사진
+			[[release]]
+				[order_details.taken.action.release.title]
+					en = Release
+					ko = 배차 취소
+				[order_details.taken.action.release.message]
+					en = You can only cancel dispatch once an hour.\nIf you want to cancel immediately, please contact the call center.
+					ko = 배차 취소는 1시간에 1회만 가능합니다.\n바로 처리를 원하시면 콜 센터로 연락 주세요.
+				[[reason]]
+					[order_details.taken.action.release.reason.MistakenOrder]
+						en = Mistaken order
+						ko = 실수로 인한 접수
+					[order_details.taken.action.release.reason.CannotReachClient]
+						en = Cannot reach client
+						ko = 고객 연락 불가
+					[order_details.taken.action.release.reason.VehicleTypeDoesNotMatches]
+						en = Vehicle type does not match
+						ko = 차량 불일치
+					[order_details.taken.action.release.reason.GoodsThatCannotBeLoaded]
+						en = Goods that cannot be loaded
+						ko = 적재 불가
+					[order_details.taken.action.release.reason.Others]
+						en = Others
+						ko = 기타
+			[[pickup]]
+				[order_details.taken.action.pickup.title]
+					en = PICK-UP-ED
+					ko = 픽업 완료
+				[order_details.taken.action.pickup.confirmation_title]
+					en = Are you sure you want to complete the pickup?
+					ko = 픽업 완료하시겠습니까?
+				[order_details.taken.action.pickup.confirmation_message]
+					en = order_details.taken.action.pickup.confirmation_message 
+					ko = 정상적인 픽업이 아니라면,\n이후 새로운 주문에 대해서\n불이익이 발생할 수 있습니다.
+			[[signature]]
+				[order_details.taken.signature.clear]
+					en = Clear
+					ko = 초기화
+					comment = Button title to clear the signature on the input screen
+				[order_details.taken.signature.save]
+					en = Save
+					ko = 저장
+					comment = Button title to save the signature from input screen
+	[[map]]
+		[order_details.map.no_current_location]
+			en = Unable to get current location
+			ko = 현재 위치 가져올 수 없습니다.
+			comment = Error shown when app isn't able to get the driver's current location from the device
+		[order_details.map.no_destination]
+			en = Unable to get destination
+			ko = 목적지를 가져올 수 없습니다. 
+			comment = Error shown when app isn't able to determine the next destination from the order details
+[[waypoint]]
+	[waypoint.company]
+		en = Company
+		ko = 회사
+	[waypoint.department]
+		en = Department
+		ko = 부서
+	[waypoint.name]
+		en = Name
+		ko = 이름
+	[waypoint.contact]
+		en = Contact
+		ko = 번호
+	[waypoint.start_location]
+		en = Start
+		ko = 출발
+	[waypoint.destination]
+		en = Destination
+		ko = 도착
+	[waypoint.stops]
+		en = + %d Stops
+		ko = + 도착지 %d곳
+[[dashboard]]
+	[[tab]]
+		[dashboard.tab.available]
+			en = Available
+			ko = 주문
+		[dashboard.tab.taken]
+			en = Taken
+			ko = 접수 주문
+		[dashboard.tab.my_page]
+			en = My Page
+			ko = 내 계정
+	[[location_prompt]]
+		[dashboard.location_prompt.message]
+			en = Permission is needed to access location data
+			comment = Alert message shown on the dashboard when the user hasn't approved location permissions
+		[dashboard.location_prompt.go_to_settings]
+			en = Go to Settings
+			comment = Button prompt to go to the system settings page
+[[filter]]
+	[filter.title]
+		en = Filter
+		ko = 주문 필터
+	[filter.vehicle]
+		en = Vehicle
+		ko = 차량 필터 
+	[filter.distance]
+		en = Distance(km)
+		ko = 거리 필터 (km)
+	[filter.distance_subtitle]
+		en = *Based on current location
+		ko = *현재위치 기준
+	[filter.pickup]
+		en = Pickup
+		ko = 출발지 선택
+	[filter.dropoff]
+		en = Dropoff
+		ko = 도착지 선택
+	[[select]]
+		[filter.select.vehicle]
+			en = Select Vehicle
+			ko = 차량 선택
+		[filter.select.vehicle_pool]
+			en = Select Vehicle Type
+			ko = 유형 선택
+		[filter.select.city]
+			en = City
+			ko = 시도
+		[filter.select.district]
+			en = District
+			ko = 시군구
+		[filter.select.neighborhood]
+			en = Neighborhood
+			ko = 읍면동
+	[[range]]
+		[filter.range.min]
+			en = Min
+			ko = 최소
+		[filter.range.max]
+			en = Max
+			ko = 최대
+	[filter.apply]
+		en = Apply
+		ko = 적용
+	[filter.reset]
+		en = Reset
+		ko = 초기화
+	[filter.basic]
+		en = Basic view
+		ko = 기본 뷰
+	[filter.auto]
+		en = Auto view
+		ko = 자동 뷰
+	[filter.fare]
+		en = Fare (unit: KRW 1,000)
+		ko = 운임 (단위 천원)
+	[filter.origin_distance]
+		en = Distance from origin
+		ko = 출발지 반경
+	[filter.action]
+		en = Apply filters
+		ko = 필터 적용하기
+	[filter.none]
+		en = No Filters Applied.
+		ko = 적용된 필터가 없습니다.
+	[[unit]]
+		[filter.unit.distance]
+			en = km
+			ko = km
+		[filter.unit.fare_thousands]
+			en = k
+			ko = 천
+		[filter.unit.fare_ten_thousands]
+			en = 0k
+			ko = 만
+	[[auto]]
+		[filter.auto.message]
+			en = When enabling auto view, orders that meet the conditions will automatically be opened
+			ko = 자동뷰를 실행하시면 조건에 맞는 주문이 자동으로 열립니다.
+	[[error]]
+		[filter.error.item_exists]
+			en = Item already exists
+			comment = Message shown when the driver tries to add a filter item which already exists
+[[my_account]]
+	[my_account.title]
+		en = My Account
+		ko = 내 계정
+	[my_account.greeting]
+		en = %@, nice to meet you!
+		ko = %@님, 반갑습니다!
+	[my_account.notifications]
+		en = Notifications
+		ko = 내 알림
+	[my_account.notices]
+		en = Notices
+		ko = 공지사항
+	[my_account.order_cap]
+		en = Order Cap: %@
+		ko = 오더 접수 가능 : %@ 건
+	[my_account.save]
+		en = Save
+		ko = 저장
+		comment = Action shown on edit profile/vehicle/bank pages to save changes
+	[[delivery]]
+		[my_account.delivery.title]
+			en = Delivery History
+			ko = 배송 기록
+		[my_account.delivery.completed]
+			en = Completed
+			ko = 최근 완료
+		[my_account.delivery.cancelled]
+			en = Cancelled
+			ko = 최근 취소
+		[my_account.delivery.orders]
+			en = %d Orders
+			ko = %d 건
+		[[today]]
+			[my_account.delivery.today.title]
+				en = Today's Orders
+				ko = 배송 기록(오늘)
+			[my_account.delivery.today.completed]
+				en = Deliveries Completed
+				ko = 배달완료
+			[my_account.delivery.today.earnings]
+				en = Today's Earnings
+				ko = 오늘 완료금액
+			[my_account.delivery.today.message]
+				en = *This amount might not exact because of the balancing is on process
+				ko = *당일 집계분으로 실시간으로 반영되지 않을 수 있습니다
+		[[history]]
+			[my_account.delivery.history.detailed_view]
+				en = Detailed view
+				ko = 상세 보기
+			[[weekly]]
+				[my_account.delivery.history.weekly.weely_rate]
+					en = Weekly Rate
+					ko = 주간 운임
+				[my_account.delivery.history.weekly.fare_record]
+					en = Fare Record
+					ko = 운임 기록
+	[[personal]]
+		[my_account.personal.title]
+			en = My Profile
+			ko = 내 정보
+		[my_account.personal.name]
+			en = Name
+			ko = 이름
+		[my_account.personal.phone_number]
+			en = Phone Number
+			ko = 휴대폰 번호
+		[my_account.personal.email]
+			en = Email
+			ko = 이메일
+		[my_account.personal.updated]
+			en = Profile Updated
+			comment = Toast shown when the profile info is updated
+	[[vehicle]]
+		[my_account.vehicle.title]
+			en = Vehicle Info
+			ko = 차량 정보
+		[my_account.vehicle.prompt]
+			en = Enter your vehicle information to receive new orders!
+			ko = 차량 정보를 입력하고\n새로운 주문을 받아보세요!
+		[my_account.vehicle.action]
+			en = Enter Vehicle Info
+			ko = 차량 정보 입력
+		[my_account.vehicle.vehicle]
+			en = Vehicle
+			ko = 차량
+		[my_account.vehicle.license]
+			en = Driver's License
+			ko = 운전면허증
+		[my_account.vehicle.business_number]
+			en = Business Number
+			ko = 사업자 번호
+		[my_account.vehicle.vehicle_number]
+			en = Vehicle Number
+			ko = 차량 번호
+		[my_account.vehicle.business_type]
+			en = Business Type
+			ko = 사업자 타입
+		[my_account.vehicle.social_security_number]
+			en = Social Security Number
+			ko = 주민등록 번호
+		[my_account.vehicle.business_registration_number]
+			en = Business Registration Number
+			ko = 사업자 등록 번호
+		[my_account.vehicle.not_editable]
+			en = If you want to change the information, please contact the customer center at %@.
+			ko = 정보 변경을 하려면 고객센터 %@로 연락을 해 주세요.
+			comment = Message shown when a driver with isn't allowed to edit existing vehicle information
+		[my_account.vehicle.updated]
+			en = Vehicle Information Updated
+			ko = 차량정보가 변경 되었습니다. 
+			comment = Toast shown when the vehicle info is updated
+	[[bank]]
+		[my_account.bank.title]
+			en = Bank Info
+			ko = 계좌 정보
+		[my_account.bank.prompt]
+			en = Enter your bank information to receive new orders!
+			ko = 계좌 정보를 입력하고\n새로운 주문을 받아보세요!
+		[my_account.bank.action]
+			en = Enter Bank Info
+			ko = 계좌 정보 입력
+		[my_account.bank.name]
+			en = Bank Name
+			ko = 은행명
+		[my_account.bank.holder]
+			en = Account Holder
+			ko = 예금주
+		[my_account.bank.number]
+			en = Account Number
+			ko = 계좌번호
+		[my_account.bank.updated]
+			en = Bank Information Updated
+			ko = 은행정보가 변경 되었습니다. 
+			comment = Toast shown when the bank info is updated
+[[settings]]
+	[settings.title]
+		en = Settings
+		ko = 설정
+	[settings.application_settings]
+		en = Application Settings
+		ko = 앱 설정
+	[settings.notifications]
+		en = Notifications
+		ko = 푸시 알림
+	[settings.report_error]
+		en = Report an error
+		ko = 오류 보내기
+	[settings.driver_cafe]
+		en = GOGOX Official Driver Cafe
+		ko = 고고엑스 공식 기사 카페
+	[settings.version]
+		en = Version
+		ko = 버전
+	[[personal]]
+		[settings.personal.title]
+			en = Personal information and account
+			ko = 개인정보 및 계정
+		[settings.personal.withdraw]
+			en = Membership withdrawal
+			ko = 회원 탈퇴
+	[[logout]]
+		[settings.logout.title]
+			en = Logout
+			ko = 로그아웃
+		[settings.logout.message]
+			en = Are you sure you want to logout?
+			ko = 로그아웃 하시겠습니까?
+			comment = Confirmation message shown the user when trying to logout
+	[[report]]
+		[settings.report.subject]
+			en = Driver App Error Report
+			ko = 기사앱 오류 보고합니다
+		[settings.report.device_info]
+			en = Device info: %@, %@
+			ko = 사용 기기: %@, %@
+		[settings.report.app_version]
+			en = App version: %@
+			ko = 앱 버전: %@
+		[settings.report.error_description]
+			en = Error description:
+			ko = 오류 상세:
+[[delivery_history]]
+	[delivery_history.weekly_earnings]
+		en = Weekly earnings %@
+		ko = 주간 기록 %@
+	[delivery_history.completed]
+		en = Completed
+		ko = 완료
+	[delivery_history.cancelled]
+		en = Cancelled
+		ko = 취소
+[[tutorial]]
+	[[intro]]
+		[[1]]
+			[tutorial.intro.1.title]
+				en = Safe Settlement
+				ko = 안전정산
+			[tutorial.intro.1.subtitle]
+				en = <![CDATA[<p>Systematic partner</p><p>Meet the exact settlement time.</p>]]>
+				ko = <![CDATA[<p>체계적인 파트너</p><p><b><font color="#337aad">정확한 정산시기</font>를 만나보세요.</b></p>]]>
+		[[2]]
+			[tutorial.intro.2.title]
+				en = Safe Fare
+				ko = 안전운임
+			[tutorial.intro.2.subtitle]
+				en = <![CDATA[<p>Transparent partner</p><p>Feel the reasonable fare.</p>]]>
+				ko = <![CDATA[<p>투명한 파트너</p><p><b><font color="#337aad">합리적인 운임</font>을 느껴보세요.</b></p>]]>
+		[[3]]
+			[tutorial.intro.3.title]
+				en = Safe Companion
+				ko = 안전동행
+			[tutorial.intro.3.subtitle]
+				en = <![CDATA[<p>A reliable partner</p><p>Be with GOGOX.</p>]]>
+				ko = <![CDATA[<p>든든한 파트너</p><p><b><font color="#337aad">고고엑스와 함께</font>하세요.</b></p>]]>
+	[tutorial.expand]
+		en = <![CDATA[<font color="#ffffff">Click to expand.</font>]]>
+		ko = <![CDATA[<font color="#ffffff">누르면</font> <font color="#00baf0">크게 보실 수 있어요.</font>]]>
+	[[tutorial.non_taken]]
+		[tutorial.non_taken.title]
+			en = Available Orders
+			ko = 주문 접수는
+		[tutorial.non_taken.subtitle]
+			en = Here
+			ko = 여기서~
+	[[tutorial.account]]
+		[tutorial.account.title]
+			en = Your Account
+			ko = 개인 정보는
+		[tutorial.account.subtitle]
+			en = Here
+			ko = 여기서~
+	[[tutorial.taken]]
+		[tutorial.taken.title]
+			en = Your Orders
+			ko = 내가 접수한 주문은
+		[tutorial.taken.subtitle]
+			en = Click here
+			ko = 여기서 확인~
+	[tutorial.filter]
+		en = <![CDATA[<font color="#ffffff">Filter the orders you see.</font>]]>
+		ko = <![CDATA[<font color="#00baf0">선택한 주문만</font> <font color="#ffffff">보실 수 있어요.</font>]]>
+	[tutorial.asap]
+		en = <![CDATA[<font color="#ffffff">Find orders for today</font>]]>
+		ko = <![CDATA[<font color="#ffffff">오늘</font> <font color="#00baf0">실시간 배송</font> <font color="#ffffff">확인</font>]]>
+	[tutorial.booking]
+		en = <![CDATA[<font color="#ffffff">Find scheduled orders</font>]]>
+		ko = <![CDATA[<font color="#00baf0">예약 배송</font> <font color="#ffffff">확인</font>]]>
+	[tutorial.disable]
+		en = Don't See Again
+		ko = 다시 보지 않기
+	[tutorial.close]
+		en = Close
+		ko = 닫기
+	[tutorial.get_started]
+		en = Get Started
+		ko = 시작하기
+[[map]]
+	[map.title]
+		en = Map
+		ko = 지도
+	[map.kakao]
+		en = KakaoMap
+		ko = 카카오맵
+	[map.apple]
+		en = Apple Maps
+		ko = 애플지도
+[[document]]
+	[document.delete]
+		comment = Action shown when the user taps a document to delete
+		en = Delete
+		ko = 삭제
+	[document.deleting]
+		comment = Message shown when the app is communicating with the backend to delete a document
+		en = Deleting...
+		ko = 삭제중...
+	[document.uploading]
+		comment = Message shown when the app is communicating with the backend to upload a document
+		en = Uploading...
+		ko = 업로드중...
+	[[error]]
+		[document.error.upload_failed]
+			en = Upload failed with %@
+			ko = %@ 업로드 실패
+			comment = Message shown when the app receives a failure response from the API when uploading a document
+		[document.error.missing_document]
+			en = Document missing
+			ko = 문서가 없습니다. 
+			comment = Message shown when a document delete is initiated when the document is not available
+		[document.error.delete_failed]
+			en = Delete failed with %@
+			ko = %@ 삭제 실패
+			comment = Message shown when the app receives a failture response from the API when deleting a document
+		[document.error.missing_delete_key]
+			en = Missing delete key
+			ko = 삭제키 없음 
+			comment = Message shown when the driver tries to delete a document without a delete key
+[[emergency_alert]]
+	[emergency_alert.learn_more]
+		en = Learn more
+		ko = 자세히 보기
+	[emergency_alert.dont_show_today]
+		en = Don't show today
+		ko = 하루 안 보기
+	[emergency_alert.close]
+		en = Close
+		ko = 닫기
+[[chathead]]
+	[chathead.vehicle]
+		en = Vehicle
+		ko = 차량 조건
+	[chathead.cash_on_arrival]
+		en = Cash on Arrival
+		ko = 착불
+	[chathead.date]
+		en = Pickup Time
+		ko = 픽업 시간
+[[withdraw]]
+	[withdraw.title]
+		en = Withdraw
+		ko = 회원 탈퇴
+	[withdraw.subtitle]
+		en = Are you leaving the GoGoX service?
+		ko = 고고엑스 서비스를 탈퇴하시나요?
+	[withdraw.description]
+		en = If you want to cancel your membership, we feel once again that our GogoX service is lacking. If you let us know if you have any inconvenience during use, we will try to provide better service by reflecting your valuable opinions.
+		ko = 고객님께서 회원탈퇴를 원하신다니, 저희 고고엑스 서비스에 부족함을 다시한번 느낍니다. 혹시 사용하시는 동안 불편하셨던 사항을 알려주시면 고객님의 소중한 의견을 반영하여 더 나은 서비스가 되도록 노력하겠습니다.
+	[withdraw.action]
+		en = Next
+		ko = 다음
+	[[confirm]]
+		[withdraw.confirm.title]
+			en = Notice for withdrawal
+			ko = 탈퇴시 유의사항 안내
+		[withdraw.confirm.verify]
+			en = I have checked all the precautions, and I will cancel my membership.
+			ko = 유의사항을 모두 확인하였으며, 회원 탈퇴합니다.
+		[withdraw.confirm.action]
+			en = Withdraw
+			ko = 회원 탈퇴
+		[[email]]
+			[withdraw.confirm.email.title]
+				en = Notice of e-mail ID for withdrawal processing
+				ko = 탈퇴 처리 이메일 아이디 안내
+			[withdraw.confirm.email.label]
+				en = The email ID below will be withdrawn.
+				ko = 아래 이메일 아이디가 탈퇴 처리 됩니다.
+			[withdraw.confirm.email.description]
+				en = After withdrawal, you will not be able to log in with the above email ID information, and your benefits (points, coupons) will automatically expire. Please apply carefully.
+				ko = 탈퇴 후 위 이메일 아이디 정보로 로그인 할 수 없으며 보유하신 혜택(포인트, 쿠폰)은 자동 소멸됩니다. 신중하게 신청해 주세요.
+		[[personal]]
+			[withdraw.confirm.personal.title]
+				en = Information on deletion of personal information
+				ko = 개인 정보 삭제 안내
+			[withdraw.confirm.personal.description]
+				en = E-mail IDs that have been withdrawn are stored for 90 days to prevent re-registration and then deleted.\nThe review information you wrote will not be deleted even after you withdraw.
+				ko = 탈퇴 처리된 이메일 아이디는 재 가입 방지를 위해 90일간 보존된 후 삭제 처리되며 이 내용은 탈퇴 처리 완료 시 이메일로 안내해 드립니다.\n\n작성하신 리뷰 정보는 탈퇴 후에도 삭제되지 않습니다.
+	[[incomplete]]
+		[withdraw.incomplete.title]
+			en = Withdraw
+			ko = 회원탈퇴
+		[withdraw.incomplete.description]
+			en = Account withdrawal is processed without any orders being processed. Also, if there is no settlement amount, it will be processed. If the settlement is not completed, please proceed after completion.
+			ko = 계정 탈퇴는 수행중인 오더가 없는 상태에서 진행 됩니다. 또한 정산 금액이 없을 경우 진행 됩니다. 정산이 미완료 되었을 시에는 완료 후 진행 해주세요. 
+	[[complete]]
+		[withdraw.complete.title]
+			en = Withdraw
+			ko = 회원탈퇴
+		[withdraw.complete.description]
+			en = Account withdrawal will be completed immediately upon application.\nPlease note that a canceled account cannot be recovered.\n\nAre you sure you want to proceed with your withdrawal?
+			ko = 계정 탈퇴는 신청 즉시 완료 됩니다.\n탈퇴된 계정은 복구를 할 수 없으니 주의를 부탁드립니다.\n\n탈퇴를 진행 하시겠습니까?
+		[withdraw.complete.action]
+			en = Leave
+			ko = 탈퇴하기
+[[kakao]]
+	[[error]]
+		[kakao.error.user_data_unavaiable]
+			en = Kakao user data unavailable
+			ko = 카카오 사용자 데이터가 없습니다.
+			comment = An error shown when there is no user data available from the response received after signin/signup with Kakao
+		[kakao.error.account_data_unavailable]
+			en = Kakao account data unavailable
+			ko = 카카오 사용자 데이터가 없습니다. 
+			comment = An error shown when there is no user account available from the response received after signin/signup with Kakao
+		[kakao.error.profile_unavailable]
+			en = Kakao profile unavailable
+			ko = 카카오 프로필이 없습니다.
+			comment = An error shown when there is no profile data available from the repsonse received after signin/signup with Kakao
+		[kakao.error.email_unavailable]
+			en = Kakao email unavailable
+			ko = 카카오 이메일이 없습니다.
+			comment = An error shown when there is no email available from the response received after signin/signup with Kakao
+		[kakao.error.phone_unavailable]
+			en = Kakao phone unavailable
+			ko = 카카오 전화번호가 없습니다.
+			comment = An error shown when there is no phone number available from the response received after signin/signup with Kakao
+		[kakao.error.client_failed]
+			en = Kakao Client failed with %@
+			ko = 카카오 클라이언트가 %@ 사유로 실패했습니다.
+			comment = An error shown when the Kakao client responds with an error
+		[kakao.error.api_failed]
+			en = Kakao API failed with %@
+			ko = 카카오 API가 %@ 사유로 실패했습니다.
+			comment = An error shown when the Kakao API responds with an error
+		[kakao.error.auth_failed]
+			en = Kakao Auth failed with %@
+			ko = 카카오 인증이 %@ 사유로 실패했습니다.
+			comment = An error shown when the Kakao Auth module responds with an error
+		[kakao.error.general_failed]
+			en = Kakao failed with %@
+			ko = 카카오가 %@ 사유로 실패했습니다.
+			comment = An error shown when the Kakao SDK responds with an error
+[[permission]]
+	[[storage]]
+		[permission.storage.rationale]
+			en = This is required to access your photos for uploading
+			ko = 업로드를 위해 사진 접근 권한이 필요합니다. 
+			comment = A message shown when the user denied the storage permission before and is prompted again
+		[permission.storage.camera]
+			en = Camera
+			ko = 카메라
+			comment = Option displayed when selecting a photo
+		[permission.storage.gallery]
+			en = Gallery
+			ko = 갤러리
+			comment = Option displayed when selecting a photo
+	[[location]]
+		[permission.location.rationale]
+			en = This is required to access your location to determine the distance to orders
+			ko = 주문까지 거리 예측을 위해 위치 정보 접근 권한이 필요합니다. 
+			comment = A message shown when the user denied the location permission before and is prompted again
+[[notifications]]
+	[[general]]
+		[notifications.general.title]
+			en = General
+			ko = 일반
+			comment = A notification channel used for regular notifications and displayed in the system settings
+		[notifications.general.description]
+			en = General notifications
+			ko = 일반 알림 
+			comment = A description of the notification channel
+	[[autoview]]
+		[notifications.autoview.title]
+			en = Auto View
+			ko = 자동뷰
+			comment = A notification channel used for auto view notifications and displayed in the system settings
+		[notifications.autoview.description]
+			en = New order alerts from the auto view
+			ko = 자동뷰를 통한 새로운 주문 알림 
+			comment = A description of the notification channel

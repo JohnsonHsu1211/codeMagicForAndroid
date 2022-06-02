@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="GGVBlue">#0088BF</color>
+  <color name="GGVYellow">#FFDD00</color>
+  
+  <color name="Kakao">#FFDE3B</color>
+
+  <color name="Danger">#EA5265</color>
+  <color name="Success">#00AEB1</color>
+
+  <color name="Border">#EEEEEE</color>
+  <color name="BorderDark">#555555</color>
+  
+  <color name="Black">#000000</color>
+  <color name="White">#FFFFFF</color>
+
+  <color name="DarkBlue">#005085</color>
+  <color name="DarkBlueDark">#0177BF</color>
+
+  <color name="AvailableASAP">#0088bf</color>
+  <color name="AvailableBooking">#cceff2</color>
+  <color name="AvailableBookingDark">#122a2d</color>
+  <color name="AvailableBookingSecondary">#e2edee</color>
+  <color name="AvailableBookingSecondaryDark">#202627</color>
+
+  <color name="RoundTrip">#005085</color>
+  <color name="MultipleDestinations">#ffdd00</color>
+  <color name="MultipleDestinationsDark">#3b2c07</color>
+
+  <color name="Cash">#00aeb1</color>
+  <color name="CashDark">#087275</color>
+  <color name="Credit">#0088bf</color>
+  <color name="CreditDark">#0a7db3</color>
+
+  <color name="PlaceholderText">#707070</color>
+
+  <color name="NavigationButtonText">#666666</color>
+  <color name="DividerText">#555555</color>
+
+</resources>

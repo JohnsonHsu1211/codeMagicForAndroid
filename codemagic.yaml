@@ -39,3 +39,20 @@ workflows:
             email:
                 recipients:
                     - johnson.hsu@artkernel.net
+    test-workflow:
+      name: test ruby script
+      instance_type: linux_x2
+      scripts:
+        - name: Say Hello
+          script: |
+            echo 'Hello Johsnon'
+        - name: Install twine
+          script: |
+            gem sources --add https://rubygems.org
+            gem install twine
+            twine generate-all-localization-files ./app/constants/strings ./app/src/main/res --format android
+            cat ./app/src/main/res/values/strings.xml
+      publishing:
+        email:
+          recipients:
+            - johnson.hsu@artkernel.net
